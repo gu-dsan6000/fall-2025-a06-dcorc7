@@ -1,0 +1,11 @@
+log_entry,log_level
+17/06/08 19:01:15 INFO broadcast.TorrentBroadcast: Started reading broadcast variable 46,INFO
+"17/06/09 22:11:38 INFO python.PythonRunner: Times: total = 38, boot = -33, init = 71, finish = 0",INFO
+"17/06/08 10:01:19 INFO python.PythonRunner: Times: total = 38, boot = 22, init = 16, finish = 0",INFO
+17/06/07 16:21:12 INFO storage.BlockManager: Found block rdd_2_39 locally,INFO
+17/06/09 18:08:39 INFO executor.Executor: Running task 20.0 in stage 3283.0 (TID 131380),INFO
+17/06/08 16:31:47 INFO executor.Executor: Running task 13.0 in stage 1081.0 (TID 43253),INFO
+17/06/08 22:17:34 INFO storage.BlockManager: Found block rdd_32873_0 locally,INFO
+17/06/06 21:30:32 INFO executor.Executor: Running task 31.0 in stage 196.0 (TID 7871),INFO
+"17/06/08 20:24:29 INFO storage.MemoryStore: Block broadcast_10418_piece0 stored as bytes in memory (estimated size 6.4 KB, free 2.2 MB)",INFO
+17/06/09 21:55:11 INFO executor.Executor: Finished task 39.0 in stage 5760.0 (TID 231716). 2667 bytes result sent to driver,INFO
