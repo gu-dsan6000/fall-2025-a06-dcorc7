@@ -20,7 +20,7 @@ def create_spark_session(master_url):
         .getOrCreate()
     )
 
-    # Configure S3 access via IAM role
+    # Configure S3 access from IAM role
     hadoop_conf = spark._jsc.hadoopConfiguration()
     hadoop_conf.set("fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
     hadoop_conf.set("fs.s3a.aws.credentials.provider",
@@ -156,9 +156,8 @@ HOW TO RUN:
     uv run python problem1.py spark://$MASTER_PRIVATE_IP:7077
 
 
-
 5. Copy files to local machine:
     exit 
 
-    scp -i $KEY_FILE -r ubuntu@$MASTER_PUBLIC_IP:~/data/output ./data/output
+    scp -i $KEY_FILE -r ubuntu@$MASTER_PUBLIC_IP:~/data/output/* ./data/output
 """
