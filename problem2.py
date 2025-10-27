@@ -60,7 +60,7 @@ def run_spark_job(master_url):
           .filter(col("cluster_id") != "")
     )
 
-    # Extract timestamp from log line (first 17 chars: "yy/MM/dd HH:mm:ss")
+    # Extract timestamp from log line
     df_parsed = df_parsed.withColumn(
         "log_ts",
         regexp_extract(col("value"), r"^(\d{2}/\d{2}/\d{2} \d{2}:\d{2}:\d{2})", 1)
@@ -153,6 +153,7 @@ def generate_plots():
         x = "cluster_id",
         y = "num_applications"
     )
+
     for p in ax.patches:
         ax.annotate(format(p.get_height(), ".0f"),
                     (p.get_x() + p.get_width() / 2., p.get_height()),
