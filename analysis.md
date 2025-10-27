@@ -41,8 +41,11 @@ Spark executed the aggregation and temporal calculations efficiently. According 
 ## Spark Web UI Observations
 Through the Spark Web UI, I verified that Spark stages were well-distributed across nodes and that strategies/approaches supported efficient parallel processing. Screenshots of core Spark UI components were recorded for supporting documentation:
 
-```markdown
+### Master UI - Problems 1 & 2
 ![Spark Web Master Screenshot](./spark_master_UI_screenshot.png)
-![Spark Web Job Screenshot](./spark_problem2_jobs_UI_screenshot.png)
+
+### Problem 1 Job UI
 ![Spark Web Job Screenshot](./spark_problem1_jobs_UI_screenshot.png)
-```
+
+### Problem 2 Job UI
+![Spark Web Job Screenshot](./spark_problem2_jobs_UI_screenshot.png)
